@@ -40,7 +40,7 @@ const profile = {
     {
       icon: Users,
       title: "Leadership",
-      desc: "Led cross-functional teams of 25+ engineers delivering measurable business impact across geographies.",
+      desc: "Mentor and empower engineering teams to deliver transformation at scale.",
     },
   ],
   impact: [
@@ -52,7 +52,7 @@ const profile = {
   services: [
     {
       title: "Warehouse & Logistics Automation",
-      desc: "End-to-end automation strategy, integration of ASRS, WMS, WES, WCS, Advance Robotics, and predictive maintenance solutions.",
+      desc: "End-to-end automation strategy, integration of ASRS, WMS, WES, WCS, Advanced Robotics, and predictive maintenance solutions.",
     },
     {
       title: "Digital Transformation",
@@ -64,7 +64,7 @@ const profile = {
     },
     {
       title: "Team Development",
-      desc: "Build and mentor engineering teams to deliver transformation at scale.",
+      desc: "Mentor and empower engineering teams to deliver automation & transformation at scale.",
     },
   ],
 };
@@ -87,8 +87,12 @@ export default function VaibhavPortfolio() {
             <h1 className="text-5xl font-extrabold text-white">
               {profile.name}
             </h1>
-            <p className="text-xl text-cyan-400 mt-2">{profile.title}</p>
-            <p className="max-w-2xl mt-4 text-slate-300">{profile.tagline}</p>
+            <p className="text-xl text-cyan-400 mt-2 font-semibold">
+              {profile.title}
+            </p>
+            <p className="max-w-2xl mt-6 text-lg text-slate-300">
+              {profile.tagline}
+            </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-6 text-sm text-slate-300">
               <div className="flex items-center gap-2">
@@ -128,7 +132,7 @@ export default function VaibhavPortfolio() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="bg-white text-slate-800 rounded-2xl p-6 shadow hover:shadow-lg transition"
+              className="bg-white text-slate-800 rounded-2xl p-6 shadow hover:shadow-xl hover:-translate-y-1 transition"
             >
               <s.icon className="w-8 h-8 mb-3 text-cyan-600" />
               <h3 className="font-semibold mb-1">{s.title}</h3>
@@ -137,11 +141,13 @@ export default function VaibhavPortfolio() {
           ))}
         </section>
 
-        {/* Impact */}
-        <section className="bg-white/10 backdrop-blur rounded-2xl p-10 text-center">
-          <h2 className="text-2xl font-bold mb-6 text-cyan-400">
-            Proven Impact
+        {/* Global Impact */}
+        <section className="bg-white/10 backdrop-blur rounded-2xl p-10 text-center shadow">
+          <h2 className="text-2xl font-bold mb-4 text-cyan-400">
+            Global Impact
           </h2>
+          <div className="mx-auto w-16 h-1 bg-cyan-500 mb-8 rounded-full"></div>
+
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {profile.impact.map((item) => (
               <div key={item.label}>
@@ -154,11 +160,13 @@ export default function VaibhavPortfolio() {
           </div>
         </section>
 
-        {/* Services */}
+        {/* Core Expertise */}
         <section>
-          <h2 className="text-2xl font-bold text-center mb-10 text-cyan-400">
-            Area of Expertise
+          <h2 className="text-2xl font-bold text-center mb-4 text-cyan-400">
+            Core Expertise
           </h2>
+          <div className="mx-auto w-16 h-1 bg-cyan-500 mb-10 rounded-full"></div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {profile.services.map((s) => (
               <motion.div
@@ -176,12 +184,12 @@ export default function VaibhavPortfolio() {
           </div>
         </section>
 
-        {/* Call to Action */}
+        {/* Leadership Highlights */}
         <section className="bg-white text-slate-800 rounded-2xl p-10 shadow text-center">
-          <h2 className="text-2xl font-bold mb-4">Professional Highlights</h2>
+          <h2 className="text-2xl font-bold mb-4">Leadership Highlights</h2>
           <p className="text-slate-600 max-w-xl mx-auto mb-6">
             With over 8 years of experience in automation, controls, and
-            transformation programs across global sites, I bring a proven track
+            transformation programs across global sites, I have a proven track
             record of delivering efficiency, scalability, and innovation in
             complex environments.
           </p>
@@ -202,7 +210,8 @@ export default function VaibhavPortfolio() {
           </div>
         </section>
 
-        <footer className="text-center text-xs text-slate-400">
+        {/* Footer */}
+        <footer className="mt-12 text-center text-xs text-slate-400">
           © {new Date().getFullYear()} {profile.name} — All rights reserved.
         </footer>
       </div>
