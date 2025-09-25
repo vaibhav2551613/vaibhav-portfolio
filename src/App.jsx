@@ -53,7 +53,7 @@ const profile = {
   services: [
     {
       title: "Warehouse & Logistics Automation",
-      desc: "End-to-end automation strategy, integration of ASRS, WCS, robotics, and predictive maintenance solutions.",
+      desc: "End-to-end automation strategy, integration of ASRS, WMS, WES, WCS, Advance Robotics, and predictive maintenance solutions.",
     },
     {
       title: "Digital Transformation",
