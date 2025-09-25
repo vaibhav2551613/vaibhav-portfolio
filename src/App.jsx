@@ -110,7 +110,7 @@ export default function VaibhavPortfolio() {
               <img
                 src={PROFILE_PHOTO}
                 alt="Profile"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale"
               />
             </div>
           </div>
