@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const RESUME_URL = "/Vaibhav_CV-2.pdf";
+const RESUME_URL = "/Vaibhav CV.pdf";
 const PROFILE_PHOTO = "/profile.jpg";
 
 const profile = {
